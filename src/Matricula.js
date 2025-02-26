@@ -234,7 +234,6 @@ function Matricula() {
                     </div>
                 ))}
             </div>
-
             {/* Modal para matricular aluno */}
             <Modal isOpen={modalMatricular}>
                 <ModalHeader> Matricular Aluno </ModalHeader>
