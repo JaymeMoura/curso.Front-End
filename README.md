@@ -1,5 +1,6 @@
 ### README.md para o Front-end
 
+```markdown
 # Front-end de Gerenciamento de Matrículas
 
 Este é o front-end para o sistema de gerenciamento de matrículas, alunos e cursos.
