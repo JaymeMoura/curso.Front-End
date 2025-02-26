@@ -1,38 +1,90 @@
+/* Estilo geral */
 .App {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+alert-global {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1050; /* Maior que o modal */
+  width: 50%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Título */
+h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Cabeçalho */
+header {
   display: flex;
-  flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 10px;
+}
+
+/* Botão Novo Curso */
+.btn-success {
+  font-size: 16px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-right: 1px;
+}
+
+/* Tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Cabeçalho da tabela */
+thead {
+  background: #28a745;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Linhas da tabela */
+tbody tr:nth-child(even) {
+  background: #f8f9fa;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Células */
+th, td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+/* Ações */
+td:last-child {
+  text-align: center;
+}
+
+/* Botões Editar e Excluir */
+.btn-primary, .btn-danger {
+  font-size: 14px;
+  padding: 8px 12px;
+  margin: 2px;
+  border-radius: 5px;
+}
+
+/* Efeito hover nos botões */
+.btn-primary:hover {
+  background: #0056b3;
+}
+
+.btn-danger:hover {
+  background: #c82333;
 }
